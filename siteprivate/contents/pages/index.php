@@ -13,12 +13,8 @@ $info = array(
 'id'=>6,'ordering'=>'6','name'=>'Macro Demo.html','statusto'=>'hide','editor'=>'default','publish'=>'2008/12/13','position'=>'','title'=>''),
 	'MiniBB'=>array(
 'id'=>8,'ordering'=>'8','name'=>'MiniBB.html','statusto'=>'hide','editor'=>'default','publish'=>'2008/12/13','position'=>'','title'=>''),
-	'Test Area'=>array(
-'id'=>10,'ordering'=>'10','name'=>'Test Area.html','statusto'=>'hide','editor'=>'default','publish'=>'2008/12/13','position'=>'','title'=>'Title of Test Area'),
 	'custom404'=>array(
 'id'=>11,'ordering'=>'11','name'=>'custom404.html','statusto'=>'hide','editor'=>'default','publish'=>'2008/12/13','position'=>'','title'=>''),
-	'jquery Fade Demo'=>array(
-'id'=>14,'ordering'=>'14','name'=>'jquery Fade Demo.html','statusto'=>'hide','editor'=>'fckeditor','publish'=>'','position'=>'','title'=>''),
 	'jquery Demo'=>array(
 'id'=>15,'ordering'=>'15','name'=>'jquery Demo.html','statusto'=>'hide','editor'=>'fckeditor','publish'=>'','position'=>'','title'=>''),
 );
