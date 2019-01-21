@@ -1,0 +1,263 @@
+/* common css for Blue - 3 columns variable width */
+body {
+    font-family: verdana, tahoma, helvetica, arial, sans-serif; 
+    font-size: 11px;
+    background-color: transparent; 
+    margin: 15px; 
+    line-height: 1.5; 
+    color: #5f5f5f; 
+}
+
+.version {
+    color: #FFF;
+}
+
+/* turn off border around image */
+img {
+    border-style: none;
+}
+
+ul { 
+    margin: 0;
+    padding-left: 5px;
+    list-style: none;
+    text-align: left;
+}
+
+a {
+    color: #AF151B;  
+    text-decoration: none; 
+} 
+
+input, select, textarea{
+    font-family:geneva, arial, helvetica, sans-serif;
+    font-size:13px;text-indent:2px;
+}
+
+textarea{
+    font-family:geneva, arial, helvetica, sans-serif;
+    font-size:13px;text-indent:2px;
+    /*width:90%;  */
+}
+
+a:hover {
+    text-decoration: underline; 
+} 
+
+
+table {
+    border-spacing:1px; 
+    background-color:inherit;
+}
+
+p, td, tr {
+    font:13px/20px geneva, arial, helvetica, sans-serif;
+    margin:0px 0px 16px 0px;
+    padding:0px;
+    vertical-align:top;
+}
+
+h1 {
+    color: #D5DDEA;
+    font-size: 100%;
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+}
+
+h2 {
+    color: #D5DDEA; 
+    font-size: 100%;
+    font-weight: bold;
+    border-bottom:#CCC solid 1px; 
+}
+
+h3 a, h3 { 
+    color: #AF151B; 
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#mosblue3cols_outer {
+    background-color: inherit; 
+    background: url("../images/bg.jpg") no-repeat top right;
+    color:#5f5f5f;
+}
+
+#mosblue3cols_topheader {
+    background-color: inherit; 
+    background: url("../images/bg_header.jpg") repeat-x top left;  
+    float:left; 
+    width: 100%;
+}
+
+#mosblue3cols_logo {
+    margin: 3px;
+    float: left;  
+}
+
+#mosblue3cols_topbanner {
+    margin: 3px;
+    float: right;
+}
+
+#mosblue3cols_logotext {
+    font-family:  Monotype Corsiva, Cursive, Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 11px;
+    font-weight: bold;	
+    vertical-align: middle;
+    text-align: left;
+    position:relative;
+    color: #003366;
+    padding-left: 13px; 
+}
+
+#mosblue3cols_slogantext {
+    font-weight: normal;
+    color: #C8C8C8;
+    font-size: 40%;
+}
+
+#mosblue3cols_body {
+    background-color:inherit;
+}
+
+#mosblue3cols_header {
+    background-color:inherit;
+    clear: both;
+}
+
+/* horizontal menu */
+#navh{margin-top:0.1em;margin-bottom:0.1em}
+#navh ul{text-align:center;margin-left:0;padding-left:0}
+#navh li{list-style-type:none;display:inline;padding:0.25em 1em;border-left:0px solid grey}
+#navh li:first-child{border:none} 
+#navh ul li a:hover {color:#ffffff;background:#ADB3C9;}
+#navh ul li a.active {font-weight:bold;color:#fff;background:#2F20AF;}
+/* horizontal menu */
+
+#mosblue3cols_header_bar,  
+#mosblue3cols_footer_bar, 
+#mosblue3cols_copyright{
+    background-color: #C03026;
+    color: #AF151B; 
+    text-decoration: none; 
+    text-align: center;
+    font-size: 10px;
+}
+
+#mosblue3cols_header_bar a:link, 
+#mosblue3cols_footer_bar a:link,  
+#mosblue3cols_copyright a:link ,
+#mosblue3cols_header_bar a:visited, 
+#mosblue3cols_footer_bar a:visited , 
+#mosblue3cols_copyright a:visited  {
+    color: #F8F8F8;
+}
+
+#mosblue3cols_header_bar a:hover, 
+#mosblue3cols_footer_bar a:hover, 
+#mosblue3cols_copyright a:hover {
+    text-decoration: underline; 
+}
+
+#mosblue3cols_copyright {
+    font-size: 10px;
+}
+
+#mosblue3cols_left {
+    margin-top: 2px;
+    float: left;
+    min-width:168px;
+    width: 168px;
+}
+
+#mosblue3cols_right {
+    margin-top: 2px;
+    float: right;
+    min-width:133px;
+    width: 133px; 
+
+}
+
+#mosblue3cols_main {
+    background-color: inherit;  
+    /*	border: 2px solid transparent; */
+    border: .1px solid transparent;
+    margin: auto; 
+    margin-left: 173px; 
+    width: 68%;
+}
+
+#mosblue3cols_content_body h2 {
+    color: #AF151B; 
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#mosblue3cols_content_body {
+    width: 100%; 
+    text-align: left;
+    background-color: inherit; 
+}
+
+.mosblue3cols_gap {
+    clear: both;
+    background-color: inherit; 
+    line-height: .33; 
+}
+
+.mosblue3cols_hdr {
+    text-align: center;
+    color: #ccc;
+    background-color: inherit; 
+    font-weight: bold; 
+    text-indent: 2px; 
+    border-bottom: 1px solid #EFD6C2;
+    display: block; 
+}
+
+.mosblue3cols_banners {
+    text-align: center;
+    color: #ccc;
+    background-color: inherit; 
+}
+
+#active_menu {
+    color: #FFF; 
+    background-color: #E88A3C;
+}
+
+.mosblue3cols_menu {
+    width: auto;
+    vertical-align: middle;
+    font-size: 11px;
+    background-color:#939BB8; 
+    border-style: solid;
+    border-width: 1px; 
+    border-color: #CFC8C2; 
+    color: #ccc;
+}
+
+.mosblue3cols_menu td a {
+    color: #FFF;
+}
+
+.mainlevel td a {
+    font-size: 11px;
+    font-weight : bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 3px;
+    display: block; 
+    border-bottom: 1px solid #CFC8C2; 
+}
+
+.mainlevel:link,
+.mainlevel:visited,
+.sublevel:link,
+.sublevel:visited {
+    color: #FFF;
+}
+/* common css for Blue - 3 columns variable width */
+

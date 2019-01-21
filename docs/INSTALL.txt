@@ -1,0 +1,105 @@
+// $Id: 
+
+CONTENTS OF THIS FILE
+---------------------
+
+ * Requirements
+ * Optional Tasks
+ * Installation
+ * Multisite Configuration
+ * More Information
+
+REQUIREMENTS
+------------
+
+MoseCMS requires a web server, PHP 4 (4.3.5 or greater) or PHP 5
+(http://www.php.net/).  The Apache web server is recommended; other web server such as IIS should work too. Database is optionla!  When using MySQL, version 4.1.1 or greater is recommended to assure you can safely transfer the database.
+
+
+OPTIONAL TASKS
+--------------
+
+- The docs, share and siteprivate should be moved to more secure location where they are not accessible directly from the web.
+
+
+INSTALLATION
+------------
+
+1. DOWNLOAD MoseCMS 
+
+   You can obtain the latest MoseCMS from http://ongetc.com download area that has a list of various download sites.  The files are in zip format and can be extracted using most compression tools. On a typical Unix command line, use:
+
+     unzip mosecms.zip
+
+   This will create a new directory mosecms/ containing all MoseCMS files and directories. Move the contents of that directory into a directory within your web server's document root or your public HTML directory:
+
+     mv mosecms/* /var/www/html
+
+
+2. CREATE THE CONFIGURATION FILE AND GRANT WRITE PERMISSIONS
+
+   MoseCMS comes will create config.php if it is not there when you access your site for the first time with the simple setup process.
+
+   Next, give the web server write privileges to the sitepublic/config.php file with the command (from the installation directory):
+
+     chmod o+w sitepublic/config.php
+
+  So that the files directory can be created automatically, give the web server write privileges to the sitepublic directory with the command (from the installation directory):
+
+     chmod o+w sitepublic
+
+3. CREATE THE MoseCMS DATABASE (Optional)
+
+   To create a database using PHPMyAdmin or a web-based control panel consult the documentation or ask your webhost service provider.
+
+   Take note of the username, password, database name and hostname as you create the database. 
+
+4. RUN THE INSTALL SCRIPT
+
+   To run the install script point your browser to the base URL of your website (e.g., http://www.example.com).
+
+   You will be guided through install screens to set up the site,
+   add the first user account password and provide basic web
+   site settings.
+
+   The install script will attempt to write-protect the config. file and the sitepublic directory after saving your configuration. However, you may need to manually write-protect them using the commands (from the installation directory):
+
+     chmod a-w sitepublic/config.php
+     chmod a-w sitepublic
+
+   If you make manual changes to the file later, be sure to protect it again after making your modifications. Failure to remove write permissions to that file is a security risk. 
+
+5. CONFIGURE MoseCMS
+
+   When the install script succeeds, you will be directed to the "Welcome" page, and you can log in as the administrator. 
+
+   
+6. REVIEW FILE SYSTEM STORAGE SETTINGS AND FILE PERMISSIONS
+
+   Since MoesCMS does not use database and use file system to store your pages in siteprivate you need to first secure siteprivate by moving to a more secure location and make sure to give web server write permission to it, plus can upload file too.
+
+
+MULTISITE CONFIGURATION
+-----------------------
+
+A single MoseCMS installation can host several MoseCMS-powered sites, each with its own individual configuration.
+
+First you will need to move share folder to a share location and point your config.php to that location then you just make a copy of your current installtion folder to a new site and set the config.php to point to the share folder and you have your second site.
+
+Each site can have each own config.php add-ons, templates, etc.
+
+Here are the steps:
+
+	cp sitepublic sitepublic2
+	cp siteprivate siteprivate2
+	edit config.php to point to these two folders
+
+That's it!
+ 
+
+MORE INFORMATION
+----------------
+
+- For additional documentation, see the online MoseCMS Wiki at
+  http://wiki.ongetc.com.
+

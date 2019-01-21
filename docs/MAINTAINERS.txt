@@ -1,0 +1,11 @@
+// $Id: 
+
+List of maintainers and contributors
+-----------------------------------------------------------------------LEGEND
+
+- M: the maintainer
+- C: the contributor
+-----------------------------------------------------------------------
+
+THE creator:
+M: Chanh Ong - chanh.ong@gmail.com

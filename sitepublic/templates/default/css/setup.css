@@ -1,0 +1,35 @@
+body {
+    margin:0px;
+    padding:0px;
+    font-family:geneva, arial, helvetica, sans-serif;
+    color:#333;
+    background-color:white;
+}
+
+p, td {
+    font:13px/20px geneva, arial, helvetica, sans-serif;
+    margin:0px 0px 16px 0px;
+    padding:0px;
+}
+
+#Orange {padding: 10px;background-color:#FFECBF;}
+#Green {padding: 10px;background-color:#E7F7C8;}
+#Red {padding: 10px;	background-color:#FDE2E1;}
+#Blue {padding: 10px;background-color:#CBE4F3;}
+#Purple {padding: 10px;background-color:#E5BCCC;}
+
+#bluebox1 {border: 1px solid #CBE4F3;background-color: #CBE4F3;}
+#bluebox2 {border: 1px solid #CBE4F3;background-color: #4AA1D6;}
+#redbox1 {border: 1px solid  #FDE2E1;background-color:#FDE2E1;}
+#redbox2 {border: 1px solid  #FDE2E1;background-color:#F11D1A;}
+#orangebox1 {border: 1px solid #FFECBF;background-color: #FFECBF;}
+#orangebox2 {border: 1px solid #FFECBF;background-color: #FFB200;}
+#greenbox1 {border: 1px solid #E7F7C8;background-color: #E7F7C8;}
+#greenbox2 {border: 1px solid #E7F7C8;background-color: #77A819;}
+#purplebox1 {border: 1px solid #B18EC8;background-color: #B18EC8;}
+#purplebox2 {border: 1px solid #8F4D73;background-color: #E5BCCC;}
+
+.box1 {-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:6px;display:block;height:8px;width:38px;border:1px solid #222;}
+.box2 {-moz-border-radius:8px;-webkit-border-radius:8pxm;border-radius:6px;height:8px;width:23px;border:1px solid #222;}
+.white {background-color:white;}
+.submit {border: 1px solid #B18EC8;background-color: #E5BCCC;font-weight:bold;}

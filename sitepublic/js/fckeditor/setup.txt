@@ -1,0 +1,11 @@
+Due to a huge file download..
+
+1. Download the latest release here
+
+http://www.fckeditor.net/download
+
+2. unzip this package in the 'addons' folder. Make sure the fckeditor.php, index.php (fckeditor support file) and other files are in the 'fckeditor.editor' folder just like in the sample screenshot 'fck.gif'
+
+4. Login at the admin panel and select it and save your settings.
+
+5. Enjoy!

@@ -1,0 +1,25 @@
+function checkAll(n,fldName){
+  if(!fldName){fldName="cb"}
+  var f=document.adminForm;
+  var c=f.toggle.checked;
+  var n2=0;
+  for(i=0;i<n;i++) {
+    cb=eval("f."+fldName+""+i);
+    if(cb){cb.checked=c;n2++}
+  }
+  if(c){
+    document.adminForm.boxchecked.value=n2
+  }else{
+    document.adminForm.boxchecked.value=0
+  }
+}
+
+function isChecked(A){
+  if(A==true){
+    document.adminForm.boxchecked.value++
+  }else{
+    document.adminForm.boxchecked.value--
+  }
+}
+
+<input type="checkbox" id="cb1" name="cid[]" value="262" onclick="isChecked(this.checked);" 

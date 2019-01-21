@@ -1,0 +1,42 @@
+todo:
+. html helper - half done - almost complete unless add more feature
+. versioning to history folder
+. phorum
+. human readable url, url parser
+. multilanguage
+. need to sanitze input for more secure
+. template/skin manager
+. mvc pattern?
+. better manuing
+. user manager
+. page meta 
+
+
+
+Initial release
+done: 
+. editor callback 
+. onEvent consist of onContent, onEdit, onHead, etc
+. set edit per page to override global editor 
+. multi-sites support via flexible placement of core
+. preview each page with page info to do edit, rename, edit, etc 
+. add-on file, add-on callback, event for callback, mosecms contentHook callback with macro callback
+. various managers for parameter, info, apps, macros, cmode, mods, etc for add-ons
+. set up various cmods to show its capabilities
+. add positions support for mods and cmods
+. add multi-skins support for both front and back end
+. add parameter/info manager for add-ons with this type: text, spacer, radio, list
+. better session handling, etc.
+. more secure password hash with salt
+. add connector for ez_sql
+. add connector for adodb
+. add connector for dbi4php and use as the core db layer
+. relocatable packages folder
+. better editor manager
+. add extension for ajax support via jQuery and a demo to show it
+. add trailing slash to all dir variables
+. add flexibility to share core, packages, set private and public resources and content
+. if config not there start setup
+. add multi-sites support
+. add db config info
+

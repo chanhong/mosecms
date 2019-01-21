@@ -1,0 +1,23 @@
+{
+    "name": "chanhong/mosecms",
+    "description": "MoseCMS",
+    "license": "BSD-3-Clause",
+    "type": "project",
+    "keywords": ["MoseCMS"],
+    "authors": [
+        {
+            "name": "Chanh Ong",
+            "email": "chanh.ong@gmail.com",
+            "homepage": "http://ongetc.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Libs\\": "share/core/libs",
+            "Addons\\": "siteprivate/addons"
+        }
+    },
+    "require": {
+        "chanhong/pdolite": "1.0.x-dev"
+    }
+}

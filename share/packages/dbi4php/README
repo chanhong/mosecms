@@ -1,0 +1,67 @@
+
+			dbi4php README
+
+HOME PAGE
+
+  http://php4dbi.sourceforge.net
+
+ABOUT
+
+  php4dbi is a database abstraction layer for PHP.  It is simple to use
+  (a single file with a simple API) and lean enought to not bloat your
+  PHP application.
+
+  It provides a common API for accessing a variety of database systems.
+  This allows you to develop your application without limiting it to
+  working on just a single database.  You also won't need to keep looking
+  at the PHP documentation pages to find the correct function name for
+  a particular database since they don't use a common naming scheme.
+  (For example, MySQL uses mysql_connect while SQLite uses sqlite_open.)
+
+AUTHOR
+
+  Craig Knudsen - http://www.k5n.us/
+    Email?  No thanks... use this instead: http://www.k5n.us/contact.php
+
+SUPPORTED DATABASES
+
+  - IBM DB2
+  - Interbase
+  - ODBC
+  - Oracle
+  - MS SQL Server
+  - MySQL
+  - PosgreSQL
+  - SQLite
+
+REQUIREMENTS
+
+  The dbi4php file is compatible with PHP4 and PHP5.  It should also work
+  with PHP3 (but has not been tested on PHP3 in a few years).
+
+  You must have your PHP installation setup/configured properly to
+  communicate with your database.  For example, if you want to use Oracle,
+  you will need to have PHP compiled with Oracle support.  Otherwise,
+  you will receive "undefined function" errors.
+
+  You can use the included "listdbs.php" tools from the command line
+  to see which databases are accessible from your PHP installation:
+
+    php listdbs.php
+
+  If your database is not listed, you may need to reinstall PHP.
+ 
+LICENSE
+
+  This tools is licensed under the GNU Lesser General Public License (LGPL).
+  There is a copy of the license included with this package (LICENSE.txt).
+
+HISTORY
+
+  This file was originally part of the WebCalendar project:
+    http://webcalendar.sourceforge.net
+
+CHANGE HISTORY
+
+  See ChangeLog file for a history of changes.
+

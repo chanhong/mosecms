@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    $(document).ready(function () {
+//fade functions 
+        $("#fadein").click(function () {    // When any link is clicked 
+            $("#fadeeffect").fadeIn("slow"); //fade in effect 
+        });
+        $("#fadeout").click(function () {   // When any link is clicked 
+            $("#fadeeffect").fadeOut("slow"); //fade out effect 
+        });
+//slide functions 
+        $("#slidein").click(function () {   // When any link is clicked 
+            $("#slideeffect").slideDown("slow"); //slide in 
+        });
+        $("#slideout").click(function () {  // When any link is clicked 
+            $("#slideeffect").slideUp("slow"); //slide out 
+        });
+    });
+</script> 
+<input type="button" id="fadein" name="fadein" value="Fade In" /> 
+<input type="button" id="fadeout" name="fadeout" value="Fade Out" /> 
+<div id="fadeeffect" style="border:1px solid #1a6780; display:none; margin:10px;padding:10px; background-color:#e3eff3;"> 
+    FADING... 
+    Lorem epsom sied van heity rath mapark to ratham. Msgyht raspiem maks vem iey tor sto fo rtem leom. Marks maxi umlion tor pion skim quedrtem lorespiortium. 
+</div> 
+<input type="button" id="slidein" name="slidein" value="Slide In"  /> 
+<input type="button" id="slideout" name="slideout" value="Slide Out"  /> 
+<div id="slideeffect" style="border:1px solid #1a6780; display:none; margin:10px; padding:10px; background-color:#e3eff3;"> 
+    SLIDING... 
+    Lorem epsom sied van heity rath mapark to ratham. Msgyht raspiem maks vem iey tor sto fo rtem leom. Marks maxi umlion tor pion skim quedrtem lorespiortium. 
+</div>  

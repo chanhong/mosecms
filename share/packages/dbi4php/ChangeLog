@@ -1,0 +1,37 @@
+20-Jan-2006 Vladimir D. Georgiev
+   Added functions dbi_escape_string() and dbi_execute()
+   to allow independance from magic_quote settings in php.ini
+11-Jan-2006 Vladimir D. Georgiev
+   Added  php_update_blob support for mssql. 
+11-Jan-2006  Ray Jones
+   Added  php_update_blob support for postgreSQL.
+06-Dec-2005 Craig Knudsen
+   Added new php_update_blob function for mysql.  Will need to implement
+   for other dbs next.
+5-Jul-2005 Ray Jones
+   Removed references to Postgresql rows in dbi_query
+   and dbi_fetch_row. This parameter became optional 
+   in PHP 4.1.0 and was simply causing to many problems
+   see http://us3.php.net/manual/en/function.pg-fetch-array.php
+5-Jul-2005 Ray Jones
+   Added SQLite support
+17-Mar-2005 Ray Jones
+  Changed mssql_error to mssql_get_last_message
+23-Jan-2005 Craig Knudsen
+  Added documentation to be used with php2html.pl
+19-Jan-2005 Craig Knudsen
+  Add option for verbose error messages.
+19-Jan-2004 raspail <at> users.sourceforge.net
+  Added mssql support
+02-Jul-2004 Francesco Riosa
+  Added mysqli support
+31-May-2002 Craig Knudsen
+  Added support for Interbase contributed by
+  Marco Forlin
+11-Jul-2001 Craig Knudsen 
+  Removed pass by reference for odbc_fetch_into()
+  Removed ++ in call to pg_fetch_array()
+22-Apr-2000 Ken Harris
+  PostgreSQL fixes
+23-Feb-2000 Craig Knudsen
+  Initial release

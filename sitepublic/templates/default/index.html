@@ -1,0 +1,85 @@
+<?php
+/**
+* templates\default\index.html
+*
+* A simple template port from Mambo template for MoseCMS
+*
+* @copyright  (C) 2008 ongetc.com
+* @license    GNU/GPL http://ongetc.com/gpl.html.
+* @info       ongetc@ongetc.com http://ongetc.com
+* @version    $Id:$
+* @since      File available since Release 0.1
+*/
+?>
+<?php echo '<?xml version="1.0" encoding="utf-8"?>'; ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" >
+    <head>
+        <?php global $mosecms; ?>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; <?php echo $mosecms->iso;?>" />
+        <?=$mosecms->loadInHeader();?>
+        <?=$mosecms->cssLink($mosecms->currentSkin());?>
+    </head>
+    <body onload="< ?php //echo $mosecms->loadOnBody();?>">
+        <div id='mosblue3cols_outer'>
+            <div id='mosblue3cols_topheader'>
+                <div id='mosblue3cols_topbanner'>
+                    <?=$mosecms->loadModules('advert1');?>
+                </div>
+                <div id='mosblue3cols_logo'>
+                    <a href='index.php'><img src='<?php echo $mosecms->currentTemplate();?>images/logo.png' alt='logo' /></a>
+                </div>
+            </div>
+            <div id='mosblue3cols_header'>
+                <div id='mosblue3cols_header_bar'>
+                    <?=$mosecms->loadModules('header');?>
+                    <?=$mosecms->menu("hadmin");?>
+                </div>
+                <div class='pathway'>Pathway: </div>
+            </div>
+            <div class='mosblue3cols_gap'>&nbsp;</div>
+            <div id='mosblue3cols_body'>	
+                <div id='mosblue3cols_left' >
+                    <div class='mosblue3cols_menu'>
+                        <?=$mosecms->loadModules('left');?>
+                    </div>
+                    <div class='mosblue3cols_banners'>
+                        <?=$mosecms->loadModules('user1');?>
+                    </div>
+                </div>
+                <div id='mosblue3cols_right'>
+                    <div class='mosblue3cols_menu'>
+                        <?=$mosecms->loadModules('right');?>
+                    </div>
+                    <div class='mosblue3cols_banners'>
+                        <?=$mosecms->loadModules('user2');?>
+                    </div>
+                </div>
+                <div id='mosblue3cols_main'>
+                    <div class='mosblue3cols_banners'>
+                        <?=$mosecms->loadModules('advert2');?>
+                    </div>
+                    <div id='mosblue3cols_content_body'>
+                        <?=$mosecms->loadModules('top');?>
+                        <?=$mosecms->loadMainBody();?>
+                    </div>	
+                    <div class='mosblue3cols_banners'>
+                        <?=$mosecms->loadModules('advert3');?>
+                    </div>
+                </div>
+            </div>
+            <div class='mosblue3cols_gap'>&nbsp;</div>
+            <div id='mosblue3cols_footer_bar'>
+                <div id="navh"><?=$mosecms->loadModules('bottom');?></div>
+                <div class="mosblue3cols_copyright">: 
+                    <a href="http://validator.w3.org/check/referer">Valid XHTML</a> ::
+                    <a href="http://ongetc.com">OngETC</a> ::
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a> :
+                </div>
+            </div>
+            <div class='mosblue3cols_banners'>
+                <?=$mosecms->loadModules('inset');?>
+            </div>
+        </div>
+    </body>
+</html>

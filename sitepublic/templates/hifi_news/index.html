@@ -1,0 +1,73 @@
+<?php
+/**
+* templates\hifi_news\index.html
+*
+* A template port from csstemplateheaven.com for MoseCMS
+*
+* @copyright  (C) 2008 ongetc.com
+* @license    GNU/GPL http://ongetc.com/gpl.html.
+* @info       ongetc@ongetc.com http://ongetc.com
+* @version    $Id:$
+* @since      File available since Release 0.1
+*/
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <?php global $mosecms; ?>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; <?php echo $mosecms->iso;?>" />
+
+        <?=$mosecms->loadInHeader();?>
+        <?=$mosecms->cssLink($mosecms->currentSkin());?>
+        <title>HiFi News | Template created by Dieter Schneider 2006 | www.csstemplateheaven.com</title>
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <div id="header">
+            </div>
+
+            <div id="linkbar">
+                <div id="navcontainer">
+                    <?=$mosecms->loadModules('bottom');?>
+
+                </div>
+            </div>
+
+            <div id="left">
+                <div id="sub_left">
+                    <?=$mosecms->loadModules('left');?>
+                </div>
+                <div id="sub_right">
+                    <?=$mosecms->loadModules('user1');?>
+                </div>
+
+                <div id="sub_content">
+                    <?=$mosecms->loadModules('top');?>
+                    <?=$mosecms->loadMainBody();?>
+                </div>
+
+                <div id="footer">
+                    <?=$mosecms->loadModules('header');?>
+                    <br />
+                    Created by Dieter Schneider 2006 | <a href="http://www.csstemplateheaven.com">www.csstemplateheaven.com</a></div>
+
+            </div>
+
+            <div id="right">
+                <?=$mosecms->loadModules('right');?>
+                <div class="navcontainer">
+                    <?=$mosecms->loadModules('user2');?>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </body>
+</html>
