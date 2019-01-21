@@ -11,6 +11,7 @@
     $autoloader = new NsClassLoader();
  */
 namespace Libs;
+defined('DS') or define('DS', DIRECTORY_SEPARATOR);
 
 class NsClassLoader {
 

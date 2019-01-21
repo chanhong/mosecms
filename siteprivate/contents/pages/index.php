@@ -4,7 +4,7 @@ $info = array(
 	'home'=>array(
 'id'=>12,'ordering'=>'1','name'=>'home.html','statusto'=>'hide','editor'=>'hype','publish'=>'2008/12/13','position'=>'','title'=>''),
 	'About Us'=>array(
-'id'=>2,'ordering'=>'2','name'=>'About Us.html','statusto'=>'hide','editor'=>'spaw2','publish'=>'2008/12/13','position'=>'','title'=>''),
+'id'=>16,'ordering'=>'2','name'=>'About Us.html','statusto'=>'hide','editor'=>'tinymce','publish'=>'','position'=>'','title'=>''),
 	'DBi4PHP Demo'=>array(
 'id'=>3,'ordering'=>'3','name'=>'DBi4PHP Demo.html','statusto'=>'hide','editor'=>'plain','publish'=>'2008/12/13','position'=>'','title'=>''),
 	'FAQ'=>array(

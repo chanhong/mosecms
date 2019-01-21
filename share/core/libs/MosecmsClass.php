@@ -53,7 +53,7 @@ class MosecmsClass extends MosecmsMainBaseClass {
             $mosecmsHelper = new MosecmsHelperClass();
         $this->h = $mosecmsHelper;
         $this->initVars();  // set the initial global config variable before starting anything
-        $this->usingLibsFromCore("class.admin.php");
+//        $this->usingLibsFromCore("class.admin.php");
         $this->usingLibsFromCore("functions.global.php");
     }
 

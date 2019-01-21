@@ -24,7 +24,7 @@ class MosecmsHelperClass extends MosecmsBaseClass {
     function __construct() {
         parent::__construct();
         $this->debug = true;
-        $this->version = "0.1.1";
+        $this->version = "0.1.2";
     }
 
     function getActiveInfo($info) {
