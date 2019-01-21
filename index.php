@@ -16,10 +16,13 @@
 
 if (!defined('_MOSECMS'))
     define('_MOSECMS', 1);  // set signature on main entry or in the core index
+
+defined('DS') or define('DS', DIRECTORY_SEPARATOR);
+
 global $moseConfig;
-$configFile = "sitepublic" . DIRECTORY_SEPARATOR . "config.php";
+$configFile = "sitepublic" . DS . "config.php";
 if (file_exists($configFile))
     include_once($configFile);
-(empty($moseConfig['coredir'])) ? $coredir = "share" . DIRECTORY_SEPARATOR . "core" : $coredir = $moseConfig['coredir'];
-include_once($coredir . DIRECTORY_SEPARATOR . "index.php");
+(empty($moseConfig['coredir'])) ? $coredir = "share" . DS . "core" : $coredir = $moseConfig['coredir'];
+include_once($coredir . DS . "index.php");
 ?>
